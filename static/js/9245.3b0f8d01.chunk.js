@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfoliosite=self.webpackChunkportfoliosite||[]).push([[9245],{39245:function(t,e,i){i.r(e),i.d(e,{build:function(){return o.b}});i(74321),i(137),i(21002),i(23235),i(96415),i(78980),i(98634),i(64201);var o=i(38727)}}]);
