@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/erikbrawner.github.io/static/css/main.6af75227.css",
-    "main.js": "/erikbrawner.github.io/static/js/main.3d54e2db.js",
+    "main.css": "/erikbrawner.github.io/static/css/main.75edeaa7.css",
+    "main.js": "/erikbrawner.github.io/static/js/main.1b9dd68f.js",
     "static/js/519.2bfd4af7.chunk.js": "/erikbrawner.github.io/static/js/519.2bfd4af7.chunk.js",
     "static/js/5626.3cfcb864.chunk.js": "/erikbrawner.github.io/static/js/5626.3cfcb864.chunk.js",
     "static/js/5044.a67f02f9.chunk.js": "/erikbrawner.github.io/static/js/5044.a67f02f9.chunk.js",
@@ -245,6 +245,9 @@
     "static/js/4318.8418b0d9.chunk.js": "/erikbrawner.github.io/static/js/4318.8418b0d9.chunk.js",
     "static/js/8434.352e3872.chunk.js": "/erikbrawner.github.io/static/js/8434.352e3872.chunk.js",
     "static/js/7225.610cb8ba.chunk.js": "/erikbrawner.github.io/static/js/7225.610cb8ba.chunk.js",
+    "static/media/Bridge_MLKRacoonRiver_arch.mp4": "/erikbrawner.github.io/static/media/Bridge_MLKRacoonRiver_arch.04732d628cc42b5ff82b.mp4",
+    "static/media/321E12thSt_LucasBuilding.mp4": "/erikbrawner.github.io/static/media/321E12thSt_LucasBuilding.9737e56279d348458bb0.mp4",
+    "static/media/Bridge_PedestrianCourtAveDesMoinesRiver.mp4": "/erikbrawner.github.io/static/media/Bridge_PedestrianCourtAveDesMoinesRiver.29e0df01f387e5d9305c.mp4",
     "static/media/selfie.png": "/erikbrawner.github.io/static/media/selfie.94a58ffaccd375b14037.png",
     "static/media/codeback.png": "/erikbrawner.github.io/static/media/codeback.6068e56aa8cc63afc34d.png",
     "static/media/contoursBgSmall.svg": "/erikbrawner.github.io/static/media/contoursBgSmall.dc135c9a694158040f5a4660bc0d0bc8.svg",
@@ -328,15 +331,20 @@
     "static/media/logo-esri.svg": "/erikbrawner.github.io/static/media/logo-esri.0b3d2c2359071f7c9a9e0b56b64bbd1b.svg",
     "static/media/text-gisisdata.svg": "/erikbrawner.github.io/static/media/text-gisisdata.22d34455f1a00d6eaeb5a9574bb3f708.svg",
     "static/media/logo-python.svg": "/erikbrawner.github.io/static/media/logo-python.012abe2302f8ec6c8d2085deede4f262.svg",
+    "static/media/logo-arcgispro.svg": "/erikbrawner.github.io/static/media/logo-arcgispro.77166a0acdd452b38e336fa462932e50.svg",
     "static/media/basemap-toggle-64.svg": "/erikbrawner.github.io/static/media/basemap-toggle-64.c1bf3797d177c6aa74fe.svg",
     "static/media/Loading_Indicator_double_32.svg": "/erikbrawner.github.io/static/media/Loading_Indicator_double_32.71fd9d44f3e393db620b.svg",
     "static/media/server-sharp.svg": "/erikbrawner.github.io/static/media/server-sharp.9d915e8fe7192f19ed03606957efbafa.svg",
     "static/media/scrollPath3Sections.svg": "/erikbrawner.github.io/static/media/scrollPath3Sections.2c2517276c18826e41c685fd57458e95.svg",
+    "static/media/logo-sketchup.svg": "/erikbrawner.github.io/static/media/logo-sketchup.d37fe8646f2f87c58d06206f5d2f4421.svg",
     "static/media/logo-leafletjs.svg": "/erikbrawner.github.io/static/media/logo-leafletjs.baf5210f09e2fde384a4e3958863e7fc.svg",
     "index.html": "/erikbrawner.github.io/index.html",
     "static/media/logo-github.svg": "/erikbrawner.github.io/static/media/logo-github.1204e8b2c0272f9e342076375d870917.svg",
+    "static/media/logo-openlayers.svg": "/erikbrawner.github.io/static/media/logo-openlayers.7fd7b64a497aeedb065230cd2f2ca3ee.svg",
     "static/media/logo-linkedin.svg": "/erikbrawner.github.io/static/media/logo-linkedin.1666f3c94ed785a22435d2149cd2df30.svg",
+    "static/media/arrow-forward-circle.svg": "/erikbrawner.github.io/static/media/arrow-forward-circle.de98ad7d4b027e6d084bc7b81360e777.svg",
     "static/media/code-slash-sharp.svg": "/erikbrawner.github.io/static/media/code-slash-sharp.dbf6904a574b58dc5ce4f7a9f252c58f.svg",
+    "static/media/arrow-back-circle.svg": "/erikbrawner.github.io/static/media/arrow-back-circle.2451051b67b812b26e29d610c8f6aca5.svg",
     "static/media/close-circle-sharp.svg": "/erikbrawner.github.io/static/media/close-circle-sharp.a0c10d459ca41cce1acd5922316b8d96.svg",
     "static/media/mail-sharp.svg": "/erikbrawner.github.io/static/media/mail-sharp.c2791fb4d49494b8d2543124a1cfbd7f.svg",
     "static/media/cube-sharp.svg": "/erikbrawner.github.io/static/media/cube-sharp.3ce2ad809fc16cd6aead11ae50aab6be.svg",
@@ -344,8 +352,8 @@
     "static/media/chevron-down-circle-outline.svg": "/erikbrawner.github.io/static/media/chevron-down-circle-outline.f74d4cb7c8e416ed3ac1d3fe1a913b2d.svg",
     "static/media/SM-Slider_TrackBackground_hover.svg": "/erikbrawner.github.io/static/media/SM-Slider_TrackBackground_hover.5dcf34ac7d59f98735ad.svg",
     "static/media/SM-Slider_TrackBackground_idle.svg": "/erikbrawner.github.io/static/media/SM-Slider_TrackBackground_idle.cc7bd7014a003ba1844f.svg",
-    "main.6af75227.css.map": "/erikbrawner.github.io/static/css/main.6af75227.css.map",
-    "main.3d54e2db.js.map": "/erikbrawner.github.io/static/js/main.3d54e2db.js.map",
+    "main.75edeaa7.css.map": "/erikbrawner.github.io/static/css/main.75edeaa7.css.map",
+    "main.1b9dd68f.js.map": "/erikbrawner.github.io/static/js/main.1b9dd68f.js.map",
     "519.2bfd4af7.chunk.js.map": "/erikbrawner.github.io/static/js/519.2bfd4af7.chunk.js.map",
     "5626.3cfcb864.chunk.js.map": "/erikbrawner.github.io/static/js/5626.3cfcb864.chunk.js.map",
     "5044.a67f02f9.chunk.js.map": "/erikbrawner.github.io/static/js/5044.a67f02f9.chunk.js.map",
@@ -556,7 +564,7 @@
     "7225.610cb8ba.chunk.js.map": "/erikbrawner.github.io/static/js/7225.610cb8ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6af75227.css",
-    "static/js/main.3d54e2db.js"
+    "static/css/main.75edeaa7.css",
+    "static/js/main.1b9dd68f.js"
   ]
 }
