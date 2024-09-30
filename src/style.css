@@ -1,0 +1,215 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  background-color: rgb(25,25,25);
+  color: #dbdbdb;
+/*  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+*/  
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: rgba(35,108,118,1);
+  text-decoration: inherit;
+}
+a:hover {
+  color: rgba(35,108,118,1);
+}
+
+html, body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+
+#view-div {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+#scroll-div {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  overflow-y: auto;
+  
+  background-image: linear-gradient(to right, rgba(5,5,5,0.99), rgba(5,5,5,0.7) 60%, rgba(5,5,5,0.5) 85%, rgba(5,5,5,0.3));
+  z-index: 100;
+  pointer-events: 'auto';
+}
+
+.info-div {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  min-height: 250px;
+  min-width: calc(100vw - 100px);
+  max-width: calc(100vw - 100px);
+  margin-bottom: 20rem;
+  z-index: 200;
+}
+
+#landing-div {
+  height: 100vh;
+  width: 100vh
+}
+
+#logo-img {
+  position: absolute;
+  left: 5%;
+  top: 45%;
+  height: 80px;
+  width: 250px;
+  z-index: 300;
+}
+
+#scrollIndicator-img {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(50%);
+  margin: auto;
+  height: 65px;
+  width: 65px;
+  fill: none;
+  stroke: rgba(219, 219, 219, 0.5);
+  stroke-width: 30;
+  padding: 0;
+  border-radius: 35px;
+  z-index: 300;
+  animation: color-change 8s ease 2s infinite;
+}
+#scrollIndicator-img:hover {
+  cursor: pointer;
+}
+
+@keyframes color-change {
+  0% {stroke: rgba(219, 219, 219, 0.5);}
+  25% {stroke: rgba(123, 171, 69, 0.8);}
+  50% {stroke: rgba(219, 219, 219, 0.5);}
+  75% {stroke: rgba(35, 100, 118, 0.8);}
+}
+
+.desc-txt {
+  margin-left: 2rem;
+}
+
+#codinggrid-img {
+  position: relative;
+  height: 200px;
+  z-index: 300;
+}
+
+.socials-div {
+  position: fixed;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  right: 5px;
+  top: 25%;
+  padding: 5px;
+  margin: 0;
+  background-color: rgba(25,25,25,0.8);
+  border: 5px solid rgba(35,108,118,1);
+  border-radius: 25px;
+  z-index: 200;
+}
+
+.socials-img {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  fill: rgba(255,255,255,0.6);
+  z-index: 300;
+}
+.socials-img:hover {
+  cursor: pointer;
+  fill: #7dac46;
+  stroke: #7dac46;
+}
+
+#hideInfo-btn {
+  position: fixed;
+  right: 5px;
+  bottom: 20px;
+  border: none;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  margin-right: 5px;
+  background: url('./src/assets/eye.svg');
+  z-index: 200;
+}
+#hideInfo-btn:hover {
+  cursor: pointer;
+  fill: #7dac46;
+  stroke: #7dac46;
+}
+
+#hideInfoBtn-img {
+  stroke: white;
+  fill: white;
+  height: 30px;
+  width: 30px;
+}
+
+.esri-attribution {
+  opacity: 0.2;
+}
+
+@media (min-width: 769px) {
+
+  .info-div {
+    margin-bottom: 30rem;
+  }
+
+  #logo-img {
+    position: absolute;
+    height: 120px;
+    width: 350px;
+    z-index: 300;
+  }
+
+  #codinggrid-img {
+    height: 300px;
+  }
+
+  #scrollIndicator-img {
+    height: 75px;
+    width: 75px;
+  }
+  
+  #hideInfo-btn {
+    height: 50px;
+    width: 50px;
+  }
+}

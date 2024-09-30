@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://js.arcgis.com/4.30/@arcgis/core/assets/esri/themes/dark/main.css" />
+    <script src="https://js.arcgis.com/4.30/"></script>
+    <title>erik brawner</title>
+  </head>
+  <body>
+    <!--<div id="app"></div>-->
+    <div class="socials-div">
+      <a id="linkedin-btn" href="https://linkedin.com/in/erik-brawner-101394b9" target="_blank" rel="noopener noreferrer">
+        <svg id="linkedin-img" class="socials-img" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>LinkedIn</title><path d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"/></svg>
+      </a>
+      <a id="github-btn" href="https://github.com/erikbrawner" target="_blank" rel="noopener noreferrer">
+        <svg id="github-img" class="socials-img" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>GitHub</title><path d="M256,32C132.3,32,32,134.9,32,261.7c0,101.5,64.2,187.5,153.2,217.9a17.56,17.56,0,0,0,3.8.4c8.3,0,11.5-6.1,11.5-11.4,0-5.5-.2-19.9-.3-39.1a102.4,102.4,0,0,1-22.6,2.7c-43.1,0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1,1.4-14.1h.1c22.5,2,34.3,23.8,34.3,23.8,11.2,19.6,26.2,25.1,39.6,25.1a63,63,0,0,0,25.6-6c2-14.8,7.8-24.9,14.2-30.7-49.7-5.8-102-25.5-102-113.5,0-25.1,8.7-45.6,23-61.6-2.3-5.8-10-29.2,2.2-60.8a18.64,18.64,0,0,1,5-.5c8.1,0,26.4,3.1,56.6,24.1a208.21,208.21,0,0,1,112.2,0c30.2-21,48.5-24.1,56.6-24.1a18.64,18.64,0,0,1,5,.5c12.2,31.6,4.5,55,2.2,60.8,14.3,16.1,23,36.6,23,61.6,0,88.2-52.4,107.6-102.3,113.3,8,7.1,15.2,21.1,15.2,42.5,0,30.7-.3,55.5-.3,63,0,5.4,3.1,11.5,11.4,11.5a19.35,19.35,0,0,0,4-.4C415.9,449.2,480,363.1,480,261.7,480,134.9,379.7,32,256,32Z"/></svg>
+      </a>
+      <a id="email-btn" href="mailto:evbrawner@gmail.com" target="_blank" rel="noopener noreferrer">
+        <svg id="email-img" class="socials-img" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>Email</title><path d="M464,80H48A16,16,0,0,0,32,96V416a16,16,0,0,0,16,16H464a16,16,0,0,0,16-16V96A16,16,0,0,0,464,80ZM265.82,284.63a16,16,0,0,1-19.64,0L89.55,162.81l19.64-25.26L256,251.73,402.81,137.55l19.64,25.26Z"/></svg>
+      </a>
+    </div>
+    <button id="hideInfo-btn" title="Hide/Show Overlay">
+      <!--<svg id="hideInfoBtnImg" src="src/assets/eye.svg" alt="Hide Info Display" height="30" width="30" fill="white" stroke="white"></svg>-->
+    </button>
+    <div id="scroll-div">
+      <div id="landing-div" class="info-div" style="opacity: 1">
+        <image id="logo-img" src="src/assets/logo2.png" />
+        <svg id="scrollIndicator-img" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>Scroll Down</title><path d="M256,64C150,64,64,150,64,256s86,192,192,192,192-86,192-192S362,64,256,64Z" /><polyline points="352 216 256 312 160 216" /></svg>
+      </div>
+      <div id="about-div" class="info-div" style="opacity: 1">
+        <p id="about-text" class="desc-txt">
+          Hi, I'm Erik Brawner. As a geospatial developer, I specialize in creating innovative solutions that leverage the power of spatial data. With a passion for creating interactive and visually stunning maps, I have a deep understanding of the latest technologies and best practices in the field.
+          <br />
+          <br />
+          My expertise lies in developing custom applications that seamlessly integrate with various geospatial platforms, such as ArcGIS, Mapbox, and other open source solutions. I have a proven track record of delivering high-quality, user-friendly solutions that enable organizations to make informed decisions based on spatial data.
+          <br />
+          <br />
+          I am committed to staying up-to-date with the latest advancements in the geospatial industry, ensuring that my work is always cutting-edge and aligned with the needs of my clients. Whether it's developing interactive web applications, creating custom maps and visualizations, or integrating geospatial data into existing systems, I am dedicated to delivering exceptional results.
+          <br />
+          <br />
+          If you're looking for a talented geospatial developer who is passionate about creating innovative solutions, I'm your guy. Let's work together to bring your spatial data to life and drive success for your organization.
+        </p>
+      </div>
+      <div id="webDev-div" class="info-div" style="opacity: 1">
+        <p id="webDev-text" class="desc-txt">
+          I enjoy building spatial solutions for the web using the most popular web mapping APIs in modern frameworks and libraries. For more sophisticated solutions, check them out on <a href='https://github.com/erikbrawner' _blank='target' rel='noopener noreferrer' title='Link to GitHub'>GitHub</a>
+
+          <!--Hey there! As a geospatial developer, I've had the privilege of working with some amazing technologies that help me bring maps and spatial data to life. Here's a rundown of my expertise:
+
+JavaScript and TypeScript: I'm proficient in both JavaScript and TypeScript, which are the bread and butter of web development. I've used them to build interactive web applications, leverage APIs, and create custom mapping solutions.
+
+React: I love working with React, a popular JavaScript library for building user interfaces. It's perfect for creating scalable and maintainable applications, and I've used it to build some amazing mapping apps.
+
+Python: Python is another favorite of mine, and I've used it for a wide range of geospatial tasks, from data analysis to scripting. I'm proficient in the ArcGIS Python API, which allows me to automate tasks, build custom tools, and integrate with other systems.
+
+ArcGIS JavaScript API: This API is a powerhouse for building web-based mapping applications. I've used it to create custom maps, integrate with other systems, and build interactive mapping experiences.
+
+ArcGIS Python API: As I mentioned earlier, I'm proficient in the ArcGIS Python API, which allows me to automate tasks, build custom tools, and integrate with other systems.
+
+Cesium: Cesium is an amazing JavaScript library for building 3D globes and maps. I've used it to create stunning visualizations and interactive mapping experiences.
+
+What does this mean for you?
+
+As a geospatial developer with expertise in these technologies, I can help you build custom mapping solutions, integrate spatial data into your applications, and create interactive mapping experiences. Whether you're looking to build a web-based mapping application, automate geospatial tasks, or integrate spatial data into your existing systems, I'm here to help.
+
+Let's chat about your project and see how I can help you achieve your goals!-->
+        </p>
+        <img src="src/assets/codinggrid.png" id="codinggrid-img" />
+      </div>
+      <div id="threeD-div" class="info-div" style="opacity: 1">
+        <p id="threeD-text" class="desc-txt">
+          From working with LiDAR point clouds to using dimensions from LiDAR to model building and structure models. These models can be brought back to ArcGIS to create a city-scale representation of real world settings.
+        </p>
+      </div>
+    </div>
+    <div id="view-div"></div>
+    <script type="module" src="/src/arcgis.ts"></script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
