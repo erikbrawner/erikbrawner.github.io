@@ -1,5 +1,5 @@
 // Import the necessary modules
-import esriConfig from '@arcgis/core/config';
+/*import esriConfig from '@arcgis/core/config';
 import SceneView from '@arcgis/core/views/SceneView';
 import Map from '@arcgis/core/Map';
 import './style.css'
@@ -8,8 +8,8 @@ esriConfig.apiKey = import.meta.env.VITE_ESRIAPI;
 
 // Create a new Map instance
 const map = new Map({
-  //basemap: 'arcgis-hillshade-dark',
-  basemap: 'topo-3d',
+  basemap: 'arcgis-hillshade-dark',
+  //basemap: 'topo-3d',
   ground: 'world-elevation'
 });
 
@@ -29,7 +29,7 @@ const view = new SceneView({
 view.ui.remove(['zoom', 'navigation-toggle', 'compass']);
 //view.ui.remove('toggle');
 
-document.getElementById('about-div')!.addEventListener('scroll', (event) => {
+document.getElementById('about-div')!.addEventListener('click', (event) => {
   view.goTo(
     {
       position: {
@@ -37,9 +37,27 @@ document.getElementById('about-div')!.addEventListener('scroll', (event) => {
         y: 41.5868,
         z: 50000 //meters
       }
+    },
+    {
+      speedFactor: 0.3,
     }
   )
 })
+
+document.getElementById('threeD-div')!.addEventListener('click', (event) => {
+  view.goTo(
+    {
+      position: {
+        x:-117.816574,
+        y: 36.031732,
+        z: 50000 //meters
+      }
+    },
+    {
+      speedFactor: 0.3,
+    }
+  )
+})*/
 
 
 /*view.on('scroll', (event) => {

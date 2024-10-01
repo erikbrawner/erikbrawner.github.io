@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/logo.png" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://js.arcgis.com/4.30/@arcgis/core/assets/esri/themes/dark/main.css" />
-    <script src="https://js.arcgis.com/4.30/"></script>
+    <link rel="stylesheet" type="text/css" href="./src/style.css" />
+    <!--<link rel="stylesheet" href="https://js.arcgis.com/4.30/@arcgis/core/assets/esri/themes/dark/main.css" />-->
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.121/Build/Cesium/Widgets/widgets.css" rel="stylesheet" />
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.121/Build/Cesium/Cesium.js"></script>
+    <!--<script src="https://js.arcgis.com/4.30/"></script>-->
     <title>erik brawner</title>
   </head>
   <body>
@@ -46,38 +48,38 @@
       </div>
       <div id="webDev-div" class="info-div" style="opacity: 1">
         <p id="webDev-text" class="desc-txt">
-          I enjoy building spatial solutions for the web using the most popular web mapping APIs in modern frameworks and libraries. For more sophisticated solutions, check them out on <a href='https://github.com/erikbrawner' _blank='target' rel='noopener noreferrer' title='Link to GitHub'>GitHub</a>
-
-          <!--Hey there! As a geospatial developer, I've had the privilege of working with some amazing technologies that help me bring maps and spatial data to life. Here's a rundown of my expertise:
-
-JavaScript and TypeScript: I'm proficient in both JavaScript and TypeScript, which are the bread and butter of web development. I've used them to build interactive web applications, leverage APIs, and create custom mapping solutions.
-
-React: I love working with React, a popular JavaScript library for building user interfaces. It's perfect for creating scalable and maintainable applications, and I've used it to build some amazing mapping apps.
-
-Python: Python is another favorite of mine, and I've used it for a wide range of geospatial tasks, from data analysis to scripting. I'm proficient in the ArcGIS Python API, which allows me to automate tasks, build custom tools, and integrate with other systems.
-
-ArcGIS JavaScript API: This API is a powerhouse for building web-based mapping applications. I've used it to create custom maps, integrate with other systems, and build interactive mapping experiences.
-
-ArcGIS Python API: As I mentioned earlier, I'm proficient in the ArcGIS Python API, which allows me to automate tasks, build custom tools, and integrate with other systems.
-
-Cesium: Cesium is an amazing JavaScript library for building 3D globes and maps. I've used it to create stunning visualizations and interactive mapping experiences.
-
-What does this mean for you?
-
-As a geospatial developer with expertise in these technologies, I can help you build custom mapping solutions, integrate spatial data into your applications, and create interactive mapping experiences. Whether you're looking to build a web-based mapping application, automate geospatial tasks, or integrate spatial data into your existing systems, I'm here to help.
-
-Let's chat about your project and see how I can help you achieve your goals!-->
+          As a geospatial developer, I've got a passion for mapping the world and finding exciting ways to accomplish that. With a strong foundation in JavaScript and TypeScript, I've honed my skills in building interactive web applications that bring geospatial data to life.
+          <br />
+          <br />
+          I'm well-versed in the ArcGIS JavaScript API, which allows me to tap into the power of Esri's mapping technology and create custom web apps that are both functional and visually stunning. And when it comes to 3D visualization, I'm a fan of Cesium - its ability to render complex scenes with ease is a game-changer.
+          <br />
+          <br />
+          But my skills don't stop at the web. I'm also proficient in Python, which gives me the flexibility to work with a wide range of geospatial libraries and tools. The ArcGIS Python API is a favorite of mine, as it allows me to automate tasks, perform spatial analysis, and integrate with other systems.
+          <br />
+          <br />
+          Whether it's building a web app to display data through its spatial context, creating a 3D model of a cityscape, or automating a workflow to process large datasets, I'm always looking for ways to push the boundaries of what's possible with geospatial technology.
         </p>
         <img src="src/assets/codinggrid.png" id="codinggrid-img" />
       </div>
       <div id="threeD-div" class="info-div" style="opacity: 1">
         <p id="threeD-text" class="desc-txt">
-          From working with LiDAR point clouds to using dimensions from LiDAR to model building and structure models. These models can be brought back to ArcGIS to create a city-scale representation of real world settings.
+          I enjoy working with LiDAR point clouds to extract valuable insights and create stunning visualizations. With a keen eye for detail, I can take raw LiDAR data and turn it into actionable information, such as building models, terrain features, and more.
+          <br />
+          <br />
+          I'm skilled at using LiDAR to export features that bring a city to life. From generating contours of a terrain in high definition, to extracting building footprints and heights. I can even help create detailed models of infrastructure, such as roads, bridges, and utilities.
+          <br />
+          <br />
+          When it comes to creating a city-scale model, I'm a fan of ArcGIS Pro. This powerful software allows me to take my LiDAR-derived features and turn them into a cohesive, interactive 3D model that's perfect for urban planning, architecture, and more.
+          <br />
+          <br />
+          But sometimes, you need a little extra detail and flair. That's where SketchUp comes in. I love using this software to create high-detail models of buildings, landmarks, and other features that add a touch of realism to a 3D scene. Whether it's a historic landmark or a futuristic skyscraper, I can bring it to life in stunning detail.From working with LiDAR point clouds to using dimensions from LiDAR to model building and structure models. These models can be brought back to ArcGIS to create a city-scale representation of real world settings.
         </p>
       </div>
     </div>
-    <div id="view-div"></div>
+    <!--<div id="view-div"></div>-->
+    <div id="cesium-div"></div>
     <script type="module" src="/src/arcgis.ts"></script>
+    <script type="module" src="/src/cesium.ts"></script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

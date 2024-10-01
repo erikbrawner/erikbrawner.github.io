@@ -30,3 +30,6 @@ document.getElementById('scrollIndicator-img')!.addEventListener('click', () => 
     document.getElementById('about-div')!.scrollIntoView({behavior: 'smooth'});
 });
 
+document.getElementById('hideInfo-btn')!.addEventListener('domContentLoaded', () => {
+    document.getElementById('hideInfo-btn')!.style.background = "url('./src/assets/eye.svg')";
+});
