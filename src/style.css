@@ -16,6 +16,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.hidden {
+  display: none;
+}
+
 a {
   font-weight: 500;
   color: rgba(35,108,118,1);
